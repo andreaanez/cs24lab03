@@ -41,8 +41,10 @@ string trackUserAnswer()
 
   while (userAnswer.compare("n") && userAnswer.compare("y"))
   {
+    
      cout << "\n Do you Want to register for  another course? (y/n)\n";
      cin >> userAnswer;
+     cin.ignore(1000, '\n');
      cout << "Your Answer is:" << userAnswer << "\n";
   }
 
